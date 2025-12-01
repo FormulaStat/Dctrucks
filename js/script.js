@@ -16,3 +16,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+
+// Fade-in animation on scroll
+const serviceCards = document.querySelectorAll('.service-card');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+        }
+    });
+}, { threshold: 0.2 });
+
+serviceCards.forEach(card => observer.observe(card));
