@@ -57,3 +57,16 @@ const observerWhy = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 whyCards.forEach(card => observerWhy.observe(card));
+
+
+const testimonials = document.querySelectorAll(".testimonial-card");
+
+const observerTestimonials = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+        }
+    });
+}, { threshold: 0.2 });
+
+testimonials.forEach(card => observerTestimonials.observe(card));
