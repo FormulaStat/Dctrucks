@@ -44,3 +44,16 @@ const observer2 = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 truckCards.forEach(card => observer2.observe(card));
+
+
+const whyCards = document.querySelectorAll(".why-card");
+
+const observerWhy = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+        }
+    });
+}, { threshold: 0.2 });
+
+whyCards.forEach(card => observerWhy.observe(card));
