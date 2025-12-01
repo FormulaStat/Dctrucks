@@ -266,3 +266,13 @@ body {
     color: #444;
     line-height: 1.6;
 }
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.6s ease;
+}
+
+.service-card {
+    opacity: 0;
+    transform: translateY(30px);
+}
