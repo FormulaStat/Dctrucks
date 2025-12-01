@@ -30,3 +30,17 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 serviceCards.forEach(card => observer.observe(card));
+
+
+// Fade-in for truck cards
+const truckCards = document.querySelectorAll(".truck-card");
+
+const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+        }
+    });
+}, { threshold: 0.2 });
+
+truckCards.forEach(card => observer2.observe(card));
