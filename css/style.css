@@ -447,3 +447,64 @@ body {
 .btn-rent:hover {
     background: #0a1a3c;
 }
+
+
+/* Why Choose Us Section */
+.why-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.why-section .section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #0a1a3c;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.why-section .section-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #5b5b5b;
+    margin-bottom: 50px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 35px;
+}
+
+.why-card {
+    background: #f7f8fa;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.why-icon i {
+    font-size: 45px;
+    color: #123a69;
+    margin-bottom: 15px;
+}
+
+.why-card h3 {
+    font-size: 20px;
+    color: #0a1a3c;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.why-card p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+}
